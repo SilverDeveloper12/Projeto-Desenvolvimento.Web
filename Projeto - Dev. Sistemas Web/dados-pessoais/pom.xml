@@ -25,7 +25,7 @@
 	<!-- hash-identificacao: fe983c1b019d2131537d02fb0b67705e567eddff1c5c74448f9c3f1ddc8390dd -->
 
 	<properties>
-		<java.version>21</java.version>
+		<java.version>25</java.version>
 	</properties>
 
 	<dependencies>

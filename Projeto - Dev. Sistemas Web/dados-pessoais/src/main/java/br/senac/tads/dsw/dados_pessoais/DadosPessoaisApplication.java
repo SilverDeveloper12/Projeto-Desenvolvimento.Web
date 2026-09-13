@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DadosPessoaisApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DadosPessoaisApplication.class, args);
-	}
+		SpringApplication.run(DadosPessoaisApplication.class, args);System.out.println("Ta funcionando");}
 
 }

@@ -30,6 +30,9 @@ public class PessoaService {
         mapPessoas.put("beltrana", new Pessoa(contador.incrementAndGet(),
                 "beltrana", "Beltrana da Silva",
                 "beltrana@email.com", "(11) 97777-9012", LocalDate.parse("2001-02-23")));
+        mapPessoas.put("zinogre", new Pessoa(contador.incrementAndGet(),
+                "zinogre", "Zinogre de Yukumo",
+                "zinogre@yukomemail.com", "(11) 97999-1234", LocalDate.parse("2010-10-20")));
     }
 
     public List<Pessoa> obterPessoas() {
