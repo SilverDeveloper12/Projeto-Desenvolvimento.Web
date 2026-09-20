@@ -33,6 +33,7 @@ public class PessoaService {
         mapPessoas.put("zinogre", new Pessoa(contador.incrementAndGet(),
                 "zinogre", "Zinogre de Yukumo",
                 "zinogre@yukomemail.com", "(11) 97999-1234", LocalDate.parse("2010-10-20")));
+
     }
 
     public List<Pessoa> obterPessoas() {
@@ -41,5 +42,9 @@ public class PessoaService {
     public Optional<Pessoa> obterPessoa(String username) {
         return Optional.ofNullable(mapPessoas.get(username));
     }
-
+    public Pessoa incluirNovaPessoa(Pessoa pessoa) {
+        pessoa.setId(contador.incrementAndGet());
+        mapPessoas.put(pessoa.getUsername(), pessoa);
+        return pessoa;
+    }
 }
